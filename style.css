@@ -1,0 +1,39 @@
+h1{
+    background-color:  darksalmon;
+    color: aqua;
+}
+header, footer{
+    font-family: Georgia, serif;
+    font-size: large;
+    width: 60%;
+    border: 5px solid grey;
+    background-color: darksalmon;
+    border-radius: 120px;
+    padding: 1%;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 1%;
+    padding: 0;
+    background-color: darksalmon;
+}
+nav li{
+    float: left;
+    padding: 1%;
+}
+main {
+    display: block;
+    margin: 50px;
+    padding: 1%;
+}
+nav a:hover{
+    background-color: grey;
+}
+nav li a{
+    font-family: Georgia, serif;
+    font-size: large;
+    text-decoration: none;
+
+}
+
