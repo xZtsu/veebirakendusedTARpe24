@@ -1,0 +1,128 @@
+/*****************table id=lihtne***************/
+#lihtne{
+    width: 60%;
+    border: 1px solid black;
+    height: 200px;
+    border-collapse: collapse; /*üks joon border'is*/
+}
+#lihtne td{
+    border: 1px solid black;
+    text-align: center;
+
+}
+/*pseudostiilide kasutamine*/
+#lihtne tr:nth-child(1) td:nth-child(1){ /*1. rida, 1. lahter*/
+    background-color: red;
+}
+#lihtne tr:nth-child(1) td:nth-child(2){ /*1.rida, 2. lahter*/
+    background-color: greenyellow;
+}
+#lihtne tr:nth-child(2) td:nth-child(1){ /*2. rida, 1. lahter*/
+    background-color: rosybrown;
+}
+#lihtne tr:nth-child(2) td:nth-child(2){ /*2. rida, 2. lahter*/
+    background-color: salmon;
+}
+/************************tabel id=keeruline1******************/
+#keeruline1{
+    width: 40%;
+    border: 1px solid black;
+    height: 150px;
+    border-collapse: collapse; /*üks joon border'is*/
+}
+#keeruline1 td{
+    border: 1px solid black;
+    text-align: center;
+
+}
+/************************tabel id=keeruline2******************/
+#keeruline2{
+    width: 40%;
+    border: 1px solid black;
+    height: 150px;
+    border-collapse: collapse; /*üks joon border'is*/
+}
+#keeruline2 td{
+    border: 1px solid black;
+    text-align: center;
+
+}
+/************************tabel id=keeruline3******************/
+#keeruline3{
+    width: 40%;
+    border: 1px solid black;
+    height: 150px;
+    border-collapse: collapse; /*üks joon border'is*/
+}
+#keeruline3 td{
+    border: 1px solid black;
+    text-align: center;
+
+}
+#randomtabel{
+    width: 50%;
+    border: 1px solid black;
+    height: 150px;
+    border-collapse: collapse; /*üks joon border'is*/
+}
+#randomtabel td{
+    border: 1px solid black;
+    text-align: center;
+
+}
+#randomtabel tr:nth-child(1) td:nth-child(1){
+
+    background-color: salmon;
+    #randomtabel tr:nth-child(1) td:nth-child(2){
+
+        background-color: cadetblue;
+
+    }
+
+
+
+}
+#randomtabel tr:nth-child(1) td:nth-child(2){
+
+    background-color: aliceblue;
+}
+#randomtabel tr:nth-child(2) td:nth-child(1){
+
+    background-color: antiquewhite;
+}
+#randomtabel tr:nth-child(2) td:nth-child(2){
+
+    background-color: chartreuse;
+}
+#randomtabel tr:nth-child(2) td:nth-child(3){
+
+    background-color: cornflowerblue;
+}
+#randomtabel tr:nth-child(3) td:nth-child(1){
+    background-color: khaki;
+}
+#randomtabel tr:nth-child(3) td:nth-child(2){
+    height: 50px;
+    background-color: red;
+}
+#randomtabel tr:nth-child(3) td:nth-child(3){
+    background-color: darkblue;
+}
+#randomtabel tr:nth-child(5) td:nth-child(1){
+    background-color:lawngreen;
+}
+#randomtabel tr:nth-child(5) td:nth-child(2){
+    background-color: hotpink;
+}
+#randomtabel tr:nth-child(5) td:nth-child(3){
+    background-color: palevioletred;
+}
+#randomtabel tr:nth-child(6) td:nth-child(1){
+    background-color: pink;
+}
+#randomtabel tr:nth-child(6) td:nth-child(2){
+    background-color: mediumaquamarine;
+}
+#randomtabel tr:nth-child(6) td:nth-child(3){
+    background-color: navajowhite;
+}

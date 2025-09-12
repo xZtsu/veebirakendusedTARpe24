@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelid HTML/CSS kujundusega</title>
+  <link rel="stylesheet" href="tabelStyle.css">
+</head>
+<body>
+<h1>Tabelid</h1>
+<table id="lihtne">
+  <caption>Lihtne värvitud tabel</caption>
+  <!--1. rida-->
+  <tr>
+    <td>A</td>
+    <td>B</td>
+  </tr>
+  <!--2.rida-->
+  <tr>
+    <td>C</td>
+    <td>D</td>
+  </tr>
+</table>
+<!-- natukene keerulisem tabel-->
+<table id="keeruline1">
+  <caption>Keeruline värvitud tabel 1</caption>
+  <!--1. rida-->
+  <tr>
+    <!-- rowspan ühendab 2 rida-->
+    <td rowspan="2">A</td>
+    <td>B</td>
+  </tr>
+  <!--2.rida-->
+  <tr>
+    <td>C</td>
+  </tr>
+</table>
+
+<!----------------- tabel Keeruline2 ------------->
+</table>
+<!-- natukene keerulisem tabel-->
+<table id="keeruline2">
+  <caption>Keeruline tabel 2</caption>
+  <!--1. rida-->
+  <tr>
+    <!-- rowspan ühendab 2 rida-->
+    <td>A</td>
+    <td>B</td>
+  </tr>
+  <!--2.rida-->
+  <tr>
+    <td colspan="2">C</td>
+  </tr>
+</table>
+<!-------------keeruline3-------------->
+<table id="keeruline3">
+  <caption>keeruline tabel 3</caption>
+  <!--1. rida-->
+  <tr>
+    <td colspan="1">A</td>
+    <td colspan="4">B</td>
+    <tr>
+  <tr>
+    <td colspan="2">C</td>
+    <td rowspan="3">D</td>
+  <td rowspan="3">E</td>
+  </tr>
+  <!--2.rida-->
+  <tr>
+
+    <td>F</td>
+    <td>G</td>
+    </tr>
+  <tr>
+
+    <td colspan="2">I</td>
+  </tr>
+</table>
+
+<!-------------------keeruline4--------->
+
+<table id="keeruline3">
+  <caption>keeruline  tabel 4</caption>
+  <!--1. rida-->
+  <tr>
+    <td colspan="7">A</td>
+
+  <tr>
+
+  <tr>
+    <td rowspan="4">C</td>
+    <td colspan="5">D</td>
+    <td rowspan="6">E</td>
+  </tr>
+
+
+  <tr>
+
+    <td rowspan="2">F</td>
+    <td colspan="2">G</td>
+    <td rowspan="3">H</td>
+    <tf></tf>
+  </tr>
+
+  <tr>
+
+    <td>I</td>
+    <td>K</td>
+  </tr>
+
+  <tr>
+    <td colspan="3">J</td>
+  </tr>
+
+  <tr>
+
+    <td colspan="5">L</td>
+  </tr>
+
+
+</table>
+
+<!-------------------keeruline4--------->
+
+</body>
+</html>
