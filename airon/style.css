@@ -1,13 +1,13 @@
 h1{
-    background-color:  darksalmon;
-    color: aqua;
+    background-color:  transparent;
+    color: black;
 }
 header, footer{
     font-family: Georgia, serif;
     font-size: large;
     width: 60%;
     border: 5px solid grey;
-    background-color: darksalmon;
+    background-color: cornflowerblue;
     border-radius: 120px;
     padding: 1%;
 }
@@ -28,6 +28,7 @@ nav li{
     float: left;
     padding: 1%;
 }
+
 main {
     display: block;
     margin: 50px;
@@ -45,50 +46,120 @@ nav li a{
 /*------------------------------*/
 section#osa1 {
     width: 20%;
-    border-right:  solid 2px cornflowerblue;
+    border-right:  solid 1px cornflowerblue;
     border-bottom: solid 1px cornflowerblue;
     background-color: cornflowerblue;
     border-radius: 60px;
-    padding: 2%;
-    margin-top: 10px;
+    padding: 1%;
+    margin-top: 1%;
 }
 section#osa1 h3{
-    text-align: center;
-
+    text-align: Center;
     border-radius: 60px;
+    padding: 1%;
+    font-weight: bold;
+    font-variant: small-caps;
+
 }
 section#osa2 {
     width: 20%;
-    border-right:  solid 2px cornflowerblue;
+    border-right:  solid 1px cornflowerblue;
     border-bottom: solid 1px cornflowerblue;
     background-color: cornflowerblue;
     border-radius: 60px;
-    padding: 2%;
+    padding: 1%;
     margin-top: 10px;
 }
-section#osa2 h2{
+section#osa2 h3{
     text-align: center;
 
     border-radius: 60px;
-    padding: 2%;
+    padding: 1%;
     font-weight: bold;
     font-variant: small-caps;
 }
 section#osa3 {
     width: 20%;
-    border-right:  solid 2px cornflowerblue;
+    border-right:  solid 1px cornflowerblue;
     border-bottom: solid 1px cornflowerblue;
     background-color: cornflowerblue;
     border-radius: 60px;
-    padding: 2%;
+    padding: 1%;
     margin-top: 10px;
 }
-section#osa3 h2{
+section#osa3 h3{
     text-align: center;
 
-    border-radius: 60px;
-    padding: 2%;
+    border-radius: 20px;
+    padding: 1%;
     font-weight: bold;
     font-variant: small-caps;
+}
+/*------------------------------MEEDIA----------------------*/
+section#pildigaleeri{
+
+    text-align: center;
+    border-radius: 25px;
+    padding: 2%;
+    background-color: cornflowerblue;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    outline-style: solid;
+
+    }
+section#pildigaleeri h3{
+    color: white;
+    font-size: 40px;
+    }
+
+section#video{
+    text-align: center;
+    font-size: 32px;
+
+    border-radius: 25px;
+    padding: 1%;
+    background-color: cornflowerblue;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    outline-style: solid;
+    }
+section#video h3{
+    color: white;
+    font-size: 40px;
+    }
+
+section#audio{
+
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 2%;
+    background-color: cornflowerblue;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    outline-style: solid;
+
+    }
+
+section#audio h3{
+    color: white;
+    font-size: 40px;
+}
+    section#Maps{
+
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 2%;
+    background-color: cornflowerblue;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    outline-style: solid;
+}
+section#Maps h3{
+    color: white;
+    font-size: 40px;
 }
 
