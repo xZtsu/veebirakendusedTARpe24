@@ -1,0 +1,22 @@
+h1{
+
+}
+div#tekstikast{
+    background-color:cornflowerblue;
+    padding: 2%;
+    width: 30%;
+    height: 275px;
+    position: absolute;
+    left: 1050px;
+    top: 95px;
+}
+div#tekstikastklapid{
+
+    background-color:cornflowerblue;
+    padding: 2%;
+    width: 30%;
+    height: 450px;
+    position: absolute;
+    left: 1050px;
+    top: 95px;
+}

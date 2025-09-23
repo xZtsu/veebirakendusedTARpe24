@@ -22,11 +22,15 @@ nav ul{
     text-align: center;
     margin: 1%;
     padding: 0;
-    background-color: darksalmon;
+    background-color: darkblue;
+
 }
 nav li{
     float: left;
     padding: 1%;
+
+
+
 }
 
 main {
@@ -36,13 +40,21 @@ main {
 }
 nav a:hover{
     background-color: grey;
+
 }
 nav li a{
     font-family: Georgia, serif;
     font-size: large;
     text-decoration: none;
+    display: inline;
+    padding: 1rem 1rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: 2px solid darkblue;
+    border-radius: 20px;
 
 }
+
 /*------------------------------*/
 section#osa1 {
     width: 20%;
