@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="et" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>ÕPILASE REGRISTREERIMISVORM</title>
+  <script src="ul3Vorm.js"></script>
+</head>
+<body>
+<h1>ÕPILASE REGRISTREERIMISVORM</h1>
+
+<fieldset title="ISIKUANDMED" id="isikuandmed">
+
+  <legend>ISIKUANDMED</legend>
+  <label for="eesnimi">Eesnimi</label>
+  <br>
+
+    <input type="text" id="eesnimi" placeholder="nt Mario" oninput="nimiLugemine()" required maxlength="30">
+    <br>
+    <div>kuni 30 märki; nõutud</div>
+
+  <br>
+
+  <label for="perenimi">Perekonna nimi</label>
+  <br>
+
+    <input type="text" id="perenimi" placeholder="nt Metshein" oninput="perenimiFN()" required maxlength="30">
+    <br>
+    <div>kuni 30 märki; nõutud</div>
+
+  <br>
+
+  <label for="kuupaev">Sünnikuupäev</label>
+  <br>
+
+  <input type="Date" id="kuupaev" placeholder="1980-01-01" oninput="sunnikuupaevFN()" required
+  min="1950-01-01" max="2025-12-31" step="any">
+  <br>
+  <div></div>
+
+  <br>
+
+  <label>Sugu</label>
+  <br>
+
+  <input type="radio" name="suguName" id="Naine" value="Naine" onclick="suguFN()">
+  <label for="Naine">Naine</label>
+
+  <input type="radio" name="suguName" id="Mees" value="Mees" onclick="suguFN()">
+  <label for="Mees">Mees</label>
+
+  <input type="radio" name="suguName" id="Muu" value="Muu" onclick="suguFN()">
+  <label for="Muu">Muu</label>
+
+  <br>
+  <div></div>
+  <br>
+</fieldset>
+
+  <fieldset title="KONTAKT" id="kontakt" >
+<legend>KONTAKT</legend>
+
+    <label for="epost">E-Post</label>
+    <br>
+
+    <input type="text" id="epost" placeholder="nt nimi@kool.ee" oninput="KontaktFN()" required maxlength="100">
+    <br>
+    <div>kuni 100 tähemärki</div>
+
+    <br>
+
+    <label for="mobiilinumber">Mobiiltelefon</label>
+    <br>
+
+    <input type="number" id="mobiilinumber" placeholder="+372 51234567" oninput="KontaktFN()" required pattern="^\+372\s?\d{7,8)$)">
+    <br>
+    <div>kuni 100 tähemärki</div>
+<br>
+
+    <label for="aadress">Address</label>
+    <br>
+
+    <input type="text" id="aadress" placeholder="tänav, maja, korter" oninput="KontaktFN()" required >
+    <br>
+    <div>kuni 100 tähemärki</div>
+<br>
+
+</fieldset>
+
+<fieldset title="NÕUSTUMINE" id="nõustumine">
+  <legend>Nõustumine</legend>
+
+  <input type="checkbox" id="Nõustusbox" required >Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.</input
+<br>
+</fieldset>
+<br>
+
+ <input type="button" value="tuhjenda" onclick="tuhjenda()" id="tuhjendabutton">
+</body>
+</html>
