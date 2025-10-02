@@ -176,4 +176,8 @@ section#Maps h3{
     color: white;
     font-size: 40px;
 }
-
+section#alumine{
+    position: relative;
+    text-align: left;
+    padding: 1%;
+}
