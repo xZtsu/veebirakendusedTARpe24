@@ -10,7 +10,7 @@ function perenimiFN(){
 }
 function sunnikuupaevFN(){
     //let -- muutuja määramine
-    let kuupaev=document.getElementById("kuupaevFN")
+    let kuupaev=document.getElementById("kuupaev")
 
 }
 function suguFN(){
@@ -26,10 +26,14 @@ function KontaktFN(){
     let mobiilinumber=document.getElementById("mobiilinumber")
 
 }
+
+function NoustumineFN(){
+    let Noustusbox=document.getElementById("Noustusbox")
+}
 function tuhjenda(){
     let eesnimi=document.getElementById("eesnimi")
     let perenimi=document.getElementById("perenimi")
-    let sunnikuupaev=document.getElementById("sunnikuupaevFN")
+    let kuupaev=document.getElementById("kuupaev")
     let Naine=document.getElementById("Naine")
     let Mees=document.getElementById("Mees")
     let Muu=document.getElementById("Muu")

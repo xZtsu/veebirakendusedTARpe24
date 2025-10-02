@@ -28,8 +28,10 @@ nav ul{
 nav li{
     float: left;
     padding: 1%;
-
-
+    transition: transform 0.2s;
+}
+nav li:hover{
+    transform: scale(1.09);
 
 }
 
@@ -39,7 +41,7 @@ main {
     padding: 1%;
 }
 nav a:hover{
-    background-color: grey;
+    background-color: darkblue;
 
 }
 nav li a{
