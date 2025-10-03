@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muusika küsitlus</title>
+    <script src="muusikaScript.js"></script>
+</head>
+<h1>Muusika küsitlus</h1>
+<body>
+<fieldset>
+    <legend>Milliseid muusikuid/ansambleid sa tead?</legend>
+    <input type="checkbox" name="ansambel" id="DaveBlunts" value="Dave Blunts" onchange="valiAnsambel()">
+    <label for="DaveBlunts">Dave Blunts</label>
+    <br>
+    <input type="checkbox" name="ansambel" id="RH" value="Radiohead" onchange="valiAnsambel()" >
+    <label for="RH">Radiohead</label>
+    <br>
+    <input type="checkbox" name="ansambel" id="Pan" value="Panchiko" onchange="valiAnsambel()" >
+    <label for="Pan">Panchiko</label>
+    <br>
+    <div id="vastus"></div>
+    <input type="button" value="puhasta" onclick="puhasta()" id="puhasta">
+</fieldset>
+
+<fieldset>
+    <legend>Mitu tundi päevas sa kuulad muusikat?</legend>
+    <input type="range" id="Tunnid" value="0" min="0" max="24" onchange="MTunnidFN()">
+    <label for="Tunnid"></label>
+    <br>
+    <div id="vastusTund"></div>
+</fieldset>
+
+<fieldset>
+    <legend>Kas sa kuulad raadiot?</legend>
+    <input type="radio" name="Muusika" id="RadioJah" value="Jah" onchange="RaadioFN()">
+    <label for="RadioJah">Jah</label>
+    <input type="radio" name="Muusika" id="RadioEi" value="Ei" onchange="RaadioFN()">
+    <label for="RadioEi">Ei</label>
+    <br>
+    <div id="VastusRaadio"></div>
+</fieldset>
+
+<fieldset>
+    <legend>Millised raadiojaamu oskad nimetada?</legend>
+    <input type="text" value="" id="RaadioJaamad" onchange="RaadioJaamFN()">
+    <label for="RaadioJaamad"></label>
+    <br>
+    <div id="VastusRaadioJaam"></div>
+</fieldset>
+<table>
+<tr>
+    <td>
+        <label for="MuusikaValik">Millist muusikat sa kõige rohkem kuulad?</label>
+    </td>
+    <td>
+        <select name="MuusikaValik" id="MuusikaValik" onchange="MuusikaValikFN()">
+            <option value="">vali...</option>
+            <option value="Rock">Rock</option>
+            <option value="Klassikaline">Klassikaline</option>
+            <option value="Jazz">Jazz</option>
+            <option value="HipHop">Hip-Hop</option>
+            <option value="Punk">Punk</option>
+            <option value="Country">Country</option>
+        </select>
+    </td>
+    <td>
+        <div id="vastusvalik"></div>
+    </td>
+</tr>
+</table>
+</body>
+</html>
