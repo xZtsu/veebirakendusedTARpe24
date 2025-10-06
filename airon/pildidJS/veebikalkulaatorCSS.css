@@ -1,0 +1,29 @@
+h2 {
+    color: black;
+    text-align: left;
+    margin: 1%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+body {
+    background-color: whitesmoke;
+    padding: 1%;
+}
+fieldset{
+    background-color: cornflowerblue;
+
+}
+
+input{
+    background-color: white;
+    padding: 0.5%;
+    margin: 1%;
+}
+div#vastus2{
+    background-color: white;
+    display: block;
+    margin-top: 1%;
+
+}

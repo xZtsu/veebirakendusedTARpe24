@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random pilt</title>
+    <script src="veebikalkulaatorScript.js"></script>
+    <link rel="stylesheet" href="veebikalkulaatorCSS.css">
+</head>
+<body>
+
+
+<fieldset>
+    <h2>Saia kalkulaator</h2>
+<br>
+
+<input type="radio" name="valik" id="v1" value="imagesBread/bagel.jpg" onchange="arvutaPiltHind()">
+<label for="v1">Bagel</label>
+<br>
+<input type="radio" name="valik" id="v2" value="imagesBread/baguette.jpg" onchange="arvutaPiltHind()">
+<label for="v2">Baguette</label>
+<br>
+<input type="radio" name="valik" id="v3" value="imagesBread/ciabatta.jpg" onchange="arvutaPiltHind()">
+<label for="v3">Ciabatta</label>
+<br>
+<input type="radio" name="valik" id="v4" value="imagesBread/flatbread.jpg" onchange="arvutaPiltHind()">
+<label for="v4">Flatbread</label>
+<br>
+<input type="radio" name="valik" id="v5" value="imagesBread/whitebread.jpg" onchange="arvutaPiltHind()">
+<label for="v5">Whitebread</label>
+<div id="vastus"></div>
+    <br>
+<h2>Mitu saia soovid osta?</h2>
+    <br>
+<label for="tk">Vali kogus:</label>
+    <br>
+<input type="number" id="tk" min="1" max="100" step="1" value="1" onchange="arvutaPiltHind()">
+
+<br>
+<img src="" alt="" id="pilt">
+    <br>
+<div id="vastus2"></div>
+</fieldset>
+</body>
+</html>

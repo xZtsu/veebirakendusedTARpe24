@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random pilt</title>
+    <script src="randompiltScript.js"></script>
+</head>
+<body>
+<h1>Juhuslik pilt images-kasutast</h1>
+<input type="button" value="random Pilt" onclick="juhuslikPilt()">
+<br>
+<img src="" alt="" id="randomPilt">
+<h2>Piltmõistatus. Vali mida sa näed pildil</h2>
+<br>
+<input type="radio" name="valik" id="v1" value="images/0.png" onchange="piltmoistatus()">
+<label for="v1">0.png</label>
+<br>
+<input type="radio" name="valik" id="v2" value="images/1.png" onchange="piltmoistatus()">
+<label for="v2">1.png</label>
+<br>
+<input type="radio" name="valik" id="v3" value="images/2.png" onchange="piltmoistatus()">
+<label for="v3">2.png</label>
+<br>
+<input type="radio" name="valik" id="v4" value="images/3.png" onchange="piltmoistatus()">
+<label for="v4">3.png</label>
+<br>
+<input type="radio" name="valik" id="v5" value="images/lill.png" onchange="piltmoistatus()">
+<label for="v5">lill.png</label>
+<div id="vastus"></div>
+<h2>Mitu pilti soovid osta?</h2>
+<label for="tk">Vali kogus:</label>
+<input type="number" id="tk" min="1" max="100" step="1" value="1" onchange="arvutaPiltHind()">
+
+<br>
+<div id="vastus2"></div>
+</body>
+</html>
