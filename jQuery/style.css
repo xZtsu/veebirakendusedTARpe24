@@ -1,0 +1,35 @@
+div#kirjeldus{
+    position: relative;
+    left: 0;
+    border: solid black 1px;
+    width: 250px;
+    border-radius: 30px;
+    padding: 2%;
+    transition:  0.25s;
+}
+div#kirjeldus:hover{
+    transform: scale(1.0125);
+}
+img#pilt{
+    width: 250px;
+    height: 250px;
+}
+p{
+    background-color: darkslateblue;
+    border: solid black 1px;
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+
+    padding: 2%;
+}
+#panel, #flip{
+    padding: 5px;
+    text-align: center;
+    background-color: darkslateblue;
+    border: solid black 1px;
+}
+#panel {
+    padding: 50px;
+    display: none;
+}

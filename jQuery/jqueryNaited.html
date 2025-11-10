@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery näited</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function orange(){
+            $('#kirjeldus, h2').css('color','orange');
+        }
+        function must(){
+            $('#kirjeldus, h2').css('color','black');
+        }
+        function roheline(){
+            $('h2').css('color','green', 'orange');
+        }
+        function koordinaadid(event, ui){
+            let koht=ui.offset;
+            $('#koord').html('x: ' +koht.left+ '||| y: ' + koht.top);
+        }
+        function start(){
+            $('#kirjeldus').mouseenter(orange);
+            $('#kirjeldus').mouseleave(must);
+            $('#kirjeldus').mouseleave(roheline);
+            $('#pilt').draggable();
+            $('#kirjeldus').draggable();
+            $('#pilt').bind("drag", koordinaadid); // näitab pildi koordinaadid
+
+        }
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+          $(document).ready(function(){
+              $("#flip").click(function(){
+                  $("#panel").slideToggle("slow");
+              });
+          });
+
+
+
+</script>
+</head>
+<body onload="start()">
+
+<h2>jQuery</h2>
+<div id="kirjeldus">
+
+    jQuery on avatud lähtekoodiga JavaScripti teek, mis lihtsustab veebirakenduste loomist ja navigeerimist. Täpsemalt lihtsustab jQuery HTML-dokumendi objektimudeli (DOM) manipuleerimist, asünkroonse JavaScripti ja XML-i (Ajax) ning sündmuste käsitlemist. Lisaks kaasab jQuery JavaScripti funktsioonid, käsitsedes CSS-i omadusi, et lisada selliseid efekte nagu veebisaidi fade-ins ja out-id.
+
+    </div>
+<input type="button" value="vasakule"
+       onclick="$('div#kirjeldus').animate({'left':'0px'}, 1000);" id="vasakule">
+<input type="button" value="paremale"
+       onclick="$('div#kirjeldus').animate({'left':'500px'}, 1000);" id="paremale">
+<input type="button" value="STOPP"
+       onclick="$('div#kirjeldus, #pilt').animate({'left':'0px', 'top': '0px'}, 1000);" id="STOPP">
+<!--<input type="button" value="Peida"
+       onclick="$('div#kirjeldus, #pilt').hide(2000, alert('Peidan teksti ja pildi'));" id="Peida">
+<input type="button" value="Kuva"
+       onclick="$('div#kirjeldus, #pilt').show(2000, alert('Näitan teksti ja pildi!'));" id="Kuva">
+-->
+
+<p>
+    link vms https://koolitus.ee/it-teemad/jquery
+</p>
+<br>
+<button id="hide">Kuva tekst</button>
+<button id="show">Peida tekst</button>
+
+<img src="sigmatransparent.png" alt="sigma pilt"  id="pilt">
+
+<div id="koord"></div>
+<!--toggle-->
+<div id="flip">paneel alla</div>
+<div id="panel">hello world</div>
+
+<section id="juhend">
+    <h2>jQuery juhend</h2>
+    <div>
+        <ol>
+            <li> Nuppude vajutamine ja paremale/vasakule liigutamine
+                <input type="button" value="vasakule"
+                       onclick="$('div#kirjeldus').animate({'left':'0px'}, 1000);" >
+                <input type="button" value="paremale"
+                       onclick="$('div#kirjeldus').animate({'left':'500px'}, 1000);" >
+            </li>
+            <li>Hiirega liikumine teksti peale ??? kui hiir on teksti?? peal roheline värv
+
+
+            </li>
+            <li>Nupud näita/peida
+                <input type="button" value="Peida"
+                       onclick="$('div#kirjeldus, #pilt').hide(2000, alert('Peidan teksti ja pildi'));" id="Peida">
+                <input type="button" value="Kuva"
+                       onclick="$('div#kirjeldus, #pilt').show(2000, alert('Näitan teksti ja pildi!'));" id="Kuva">
+
+            </li>
+            <li>
+                draggable -- pilti saab lohistada hiirega
+                $('#pilt').draggable();
+
+            </li>
+            <li>
+                Mida sa ise lisasid?
+            </li>
+        </ol>
+    </div>
+</section>
+
+
+</body>
+</html>
