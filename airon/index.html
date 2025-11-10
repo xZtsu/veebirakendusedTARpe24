@@ -7,12 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airon veebirakenduste leht</title>
     <link rel="stylesheet" href="style.css">
+        <script src="kuupaev.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+            integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI="
+            crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="start()">
 <!--HTML5 semaatilised elemendid-->
 <header>
     <h1>Airon veebirakenduste leht</h1>
 </header>
+
+<script>
+    function black(){
+        $('h1').css('color','black');
+    }
+    function white(){
+        $('h1').css('color','white');
+    }
+    function start() {
+        $('h1').mouseenter(white);
+        $('h1').mouseleave(black);
+        $('#pilt').draggable();
+        $('#pilt2').draggable();
+       // $('#haridusdiv,#hobiddiv,#snnipaevdiv').hide();
+    }
+    $(document).ready(function(){
+        $("#hariduskaik").click(function(){
+            $("#haridusdiv").slideToggle("slow");
+        });
+
+        $("#hobid").click(function() {
+            $("#hobiddiv").slideToggle("slow");
+        });
+        $("#snnipaev").click(function() {
+            $("#snnipaevdiv").slideToggle("slow");
+        });
+    });
+</script>
+
 <nav>
     <ul>
         <li>
@@ -30,6 +66,9 @@
         <li>
             <a href="meedia.html">Meedia</a>
         </li>
+        <li>
+            <a href="https://airontatrik24.thkit.ee/wp">WP Portfoolio</a>
+        </li>
     </ul>
 
 
@@ -38,18 +77,69 @@
 
 <main>
     <table>
-    <section>
-        <h3>Hariduskäik</h3>
-        <div>
+    <section >
+        <h3 id="hariduskaik">Hariduskäik</h3>
+        <div id="haridusdiv">
             Praegu ma õpin Tallinna Tööstushariduskeskuses.
             <br>
             Enne kutsekooli ma lõpetasin Türi Põhikooli
         </div>
     </section>
-    <section>
-        <h3>hobid</h3>
-        <div>
+    <section >
+        <h3 id="hobid">Hobid</h3>
+        <div id="hobiddiv">
             Eksisteerin
+        </div>
+    </section>
+<br>
+    <section >
+        <h3 id="snnipaev">Sünnipäev</h3>
+        <div id="snnipaevdiv">
+    <input type="button" value="Täna on" onClick="tana()" >
+    <br>
+    <div id="aeg"></div>
+
+    <input type="button" value="Minu sünnipaevani" onClick="synnipaev()" >
+    <br>
+    <div id="paevad"></div>
+        </div>
+    </section>
+    </table>
+        </br>
+    <img src="Sigmawolf.jpg" alt="sigma hunt"  id="pilt">
+    </br>
+    <img src="sigmatransparent.png" alt="sigma"  id="pilt2">
+    <section id="juhend">
+        <h2>jQuery juhend</h2>
+        <div>
+            <ol>
+                <li> Nuppude vajutamine ja paremale/vasakule liigutamine
+                    <input type="button" value="vasakule"
+                           onclick="$('#pilt2, #pilt').animate({'left':'0px'}, 1000);" >
+                    <input type="button" value="paremale"
+                           onclick="$('#pilt2, #pilt').animate({'left':'500px'}, 1000);" >
+                </li>
+                <li>Hiirega liikumine teksti peale ??? kui hiir on teksti?? peal roheline värv
+
+
+                </li>
+                <li>Nupud näita/peida
+                    <input type="button" value="Peida"
+                           onclick="$('#pilt2, #pilt').hide(2000, alert('Peidan teksti ja pildi'));" id="Peida">
+                    <input type="button" value="Kuva"
+                           onclick="$('#pilt2, #pilt').show(2000, alert('Näitan teksti ja pildi!'));" id="Kuva">
+
+                </li>
+                <li>
+                    draggable -- pilti saab lohistada hiirega
+
+
+                </li>
+                <li>
+                    Mida sa ise lisasid?
+                    Slidetoggle funktsiooni Haridus, Hobid ja Sünnipäeva sectionitele
+                </li>
+            </ol>
         </div>
     </section>
 </main>
